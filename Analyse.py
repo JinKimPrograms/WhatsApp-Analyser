@@ -61,7 +61,7 @@ plt.figure(figsize=(15, 2)) # To ensure that the bar plot fits in the output cel
 word_count_value_counts = data['Word_Count'].value_counts()
 top_40_word_count_value_counts = word_count_value_counts.head(40)
 fig = top_40_word_count_value_counts.plot.bar()
-nameAndSave(fig, 'Word Count', 'Author',
+nameAndSave(fig, 'Word Count', 'Frequency',
             'Average Number of Words per Text', 4)
 
 # Create a nested dictionary to store every word spoken for every person, and how many times they said the word
